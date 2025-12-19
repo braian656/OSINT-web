@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <title>OSINT Freelance | Investigación Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./icon/spy.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <h1>OSINT Freelance</h1>
+    <p>Investigación de fuentes abiertas · Análisis digital · Perfilado</p>
+    <a href="#contacto" class="btn">Contactar</a>
+  </header>
+
+  <section id="sobre">
+    <h2>¿Qué es OSINT?</h2>
+    <p>
+      OSINT (Open Source Intelligence) es la recopilación y análisis de información
+      disponible públicamente en internet de forma legal y ética.
+    </p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Investigación de Personas</h3>
+        <p>Búsqueda de perfiles, presencia digital y rastreo de información pública.</p>
+      </div>
+
+      <div class="card">
+        <h3>Análisis de Exposición Digital</h3>
+        <p>Detección de datos personales expuestos en la web.</p>
+      </div>
+
+      <div class="card">
+        <h3>Verificación de Identidad</h3>
+        <p>Validación de perfiles sospechosos o falsos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Reportes OSINT</h3>
+        <p>Entrega de informes claros y profesionales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="legal">
+    <h2>Legalidad y Ética</h2>
+    <p>
+      Todos los servicios se realizan utilizando únicamente información pública,
+      respetando la privacidad y la legislación vigente.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nombre" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Describí tu consulta" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="formStatus"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 OSINT Freelance · Investigación Digital</p>
+    <a href="https://www.flaticon.com/free-icons/spy" title="spy icons">Spy icons created by smashingstocks - Flaticon</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init("TU_PUBLIC_KEY");
+    })();
+    </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
